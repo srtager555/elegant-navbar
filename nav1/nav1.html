@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,100;1,400&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <title>navbar effect</title>
+</head>
+
+<body>
+    <nav class="">
+        <div class="layer"></div>
+    <div class="menu">
+        <a href="" class="a__active">start</a>
+        <a href="" class="a__active">Portafolio</a>
+        <a href="" class="a__active">Blog</a>
+    </div>
+        <img src="logo.png" alt="&&">
+    <div>
+        <a href="#i" class="a__link">About</a>
+        <a href="#service" class="a__link">service</a>
+        <a href="" class="a__link">speak</a>
+    </div>
+        <span id="plegable" class="icon-menu"></span>
+    </nav>
+    <header>
+        <h1>Navbar scroll effect !!!</h1>
+        <h2>Navbar effect</h2>
+        <a href="#i">More</a>
+    </header>
+    <main>
+        <div id="i" class="About">
+            <h1>About</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, aliquid non, aut doloribus ab fuga
+                temporibus esse nostrum, quos neque beatae pariatur atque! Natus, obcaecati fuga iusto laborum quos sit.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolor explicabo aliquid soluta unde,
+                itaque reiciendis nisi ut at atque dolorem! A necessitatibus minima alias nobis! Voluptatem perspiciatis
+                quia asperiores.
+            </p>
+        </div>
+        <div id="service" class="service">
+            <h1>service</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, aliquid non, aut doloribus ab fuga
+                temporibus esse nostrum, quos neque beatae pariatur atque! Natus, obcaecati fuga iusto laborum quos sit.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolor explicabo aliquid soluta unde,
+                itaque reiciendis nisi ut at atque dolorem! A necessitatibus minima alias nobis! Voluptatem perspiciatis
+                quia asperiores.
+            </p>
+        </div>
+    </main>
+
+    <script>
+        window.addEventListener('scroll' , function(){
+            var nav = document.querySelector('nav');
+            var heigth = 100;
+            nav.classList.toggle('scrolling', window.scrollY >= heigth)
+        })
+
+        var pleg = document.querySelector('#plegable');
+        
+
+        pleg.addEventListener('click' , function(){
+            var menu = document.querySelector('.menu')
+            menu.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
